@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>July 2025 Monthly Report - Feature Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #121a21;
+            font-family: 'Roboto', sans-serif;
+            color: #e0e0e0;
+        }
+        .bg-custom-blue {
+            background-color: #1c2a38;
+        }
+        .bg-custom-dark-blue {
+            background-color: #16222e;
+        }
+        .border-custom-blue {
+            border-color: #2a3b4c;
+        }
+        .text-custom-light-blue {
+            color: #a0c4ff;
+        }
+        .text-custom-yellow {
+            color: #ffd700;
+        }
+        .btn-outline {
+            border: 1px solid #4a5a6a;
+            color: #a0c4ff;
+        }
+        .btn-outline:hover {
+            background-color: #2a3b4c;
+        }
+        .tag-completed {
+            background-color: #22c55e;
+            color: #ffffff;
+        }
+        .tag-in-progress {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+        .tag-planning {
+            background-color: #8b5cf6;
+            color: #ffffff;
+        }
+        .ship-tag-concept {
+            background-color: #6b7280;
+            color: #ffffff;
+        }
+        .ship-tag-whitebox {
+            background-color: #f59e0b;
+            color: #ffffff;
+        }
+        .ship-tag-greybox {
+            background-color: #3b82f6;
+            color: #ffffff;
+        }
+        .ship-tag-lod0 {
+            background-color: #8b5cf6;
+            color: #ffffff;
+        }
+        .ship-tag-final {
+            background-color: #10b981;
+            color: #ffffff;
+        }
+        .ship-tag-released {
+            background-color: #059669;
+            color: #ffffff;
+            border: 2px solid #ffd700;
+        }
+        .feature-card {
+            background-color: #16222e;
+            border: 1px solid #2a3b4c;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .team-badge {
+            background-color: #374151;
+            color: #d1d5db;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-full mx-auto">
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-white">JULY 2025 MONTHLY REPORT</h1>
+            <p class="text-sm text-gray-400">Feature Cards View</p>
+            <div class="mt-4 flex flex-wrap gap-4 text-sm">
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                    <span>Completed</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                    <span>In Progress</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                    <span>Planning</span>
+                </div>
+                <div class="ml-8 text-gray-400">Ship Progress:</div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-gray-500 rounded-full mr-2"></span>
+                    <span>Concept</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-amber-500 rounded-full mr-2"></span>
+                    <span>Whitebox</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                    <span>Greybox</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                    <span>LOD0</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-emerald-500 rounded-full mr-2"></span>
+                    <span>Final</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="w-3 h-3 bg-emerald-600 rounded-full mr-2 ring-2 ring-yellow-400"></span>
+                    <span>Released</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- AI & Intelligence Column -->
+            <div class="bg-custom-blue rounded-lg border border-custom-blue">
+                <div class="p-4 border-b border-custom-blue">
+                    <h2 class="text-xl font-bold text-white">AI & Intelligence</h2>
+                    <p class="text-sm text-gray-400">9 Features</p>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Combatant Wildline Sets -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">AI Content</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Combatant Wildline Sets</h3>
+                        <p class="text-sm text-gray-300">New AI behavior sets nearing completion, pending integration work.</p>
+                    </div>
+
+                    <!-- Shop Behaviors -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">AI Content</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Interactive Shop Behaviors</h3>
+                        <p class="text-sm text-gray-300">Enhanced NPC interactions in shops with medical station-style voiced concerns and lore.</p>
+                    </div>
+
+                    <!-- Boss Fight Creatures -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">AI Features</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Boss Fight Creatures</h3>
+                        <p class="text-sm text-gray-300">Prototype gameplay for boss encounters with new compartmentalized behavior tech.</p>
+                    </div>
+
+                    <!-- Close-Range Combat -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">AI Features</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Close-Range Shove Attack</h3>
+                        <p class="text-sm text-gray-300">AI can now rapidly respond with shove attacks when players or NPCs get too close.</p>
+                    </div>
+
+                    <!-- Group Perception -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">AI Features</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Group Perception System</h3>
+                        <p class="text-sm text-gray-300">Improved group behavior coordination with optimized perception timing and investigation states.</p>
+                    </div>
+
+                    <!-- Bounding Overwatch -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">AI Features</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Bounding Overwatch</h3>
+                        <p class="text-sm text-gray-300">NPCs coordinate movement through cover with updated TPS system for tactical positioning.</p>
+                    </div>
+
+                    <!-- Mission System v2 -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Game Intelligence</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Mission System v2 Prototype</h3>
+                        <p class="text-sm text-gray-300">Advanced mission node graph system with improved copy, paste, and undo functionality.</p>
+                    </div>
+
+                    <!-- Navigation Improvements -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">AI Tech</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Navigation Mesh Updates</h3>
+                        <p class="text-sm text-gray-300">Fixed planetary navigation islands and improved NPC pathfinding with cost area flags.</p>
+                    </div>
+
+                    <!-- Ship AI Movement -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">AI Tech</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Ship AI Movement</h3>
+                        <p class="text-sm text-gray-300">New flight movement blending to splines with optimized vision component performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ships & Vehicles Column -->
+            <div class="bg-custom-blue rounded-lg border border-custom-blue">
+                <div class="p-4 border-b border-custom-blue">
+                    <h2 class="text-xl font-bold text-white">Ships & Vehicles</h2>
+                    <p class="text-sm text-gray-400">12 Features</p>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Anvil Paladin -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-greybox px-2 py-1 text-xs font-semibold rounded">GREYBOX</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Anvil Paladin</h3>
+                        <p class="text-sm text-gray-300">Greybox review completed with side turret iterations to improve gameplay adherence to concept.</p>
+                    </div>
+
+                    <!-- Drake Ironclad -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-greybox px-2 py-1 text-xs font-semibold rounded">GREYBOX</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Drake Ironclad</h3>
+                        <p class="text-sm text-gray-300">Navigation flow updates with new elevators and revised staircases for improved traversal.</p>
+                    </div>
+
+                    <!-- Drake Ironclad Assault -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-whitebox px-2 py-1 text-xs font-semibold rounded">WHITEBOX</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Drake Ironclad Assault</h3>
+                        <p class="text-sm text-gray-300">Whitebox phase implementing key differences from the base Ironclad variant.</p>
+                    </div>
+
+                    <!-- RSI Meteor -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-released px-2 py-1 text-xs font-semibold rounded">RELEASED</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">RSI Meteor</h3>
+                        <p class="text-sm text-gray-300">Successfully launched into the Persistent Universe with full functionality.</p>
+                    </div>
+
+                    <!-- RSI Mantis -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-released px-2 py-1 text-xs font-semibold rounded">RELEASED</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">RSI Mantis Interior Retrofit</h3>
+                        <p class="text-sm text-gray-300">Complete interior overhaul improving quantum interdiction system integration.</p>
+                    </div>
+
+                    <!-- RSI Apollo -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-lod0 px-2 py-1 text-xs font-semibold rounded">LOD0</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">RSI Apollo Medivac/Triage</h3>
+                        <p class="text-sm text-gray-300">LOD0 reviews passed, final stages with damage setup, paints, and LOD level creation.</p>
+                    </div>
+
+                    <!-- RSI Perseus -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-lod0 px-2 py-1 text-xs font-semibold rounded">LOD0</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">RSI Perseus</h3>
+                        <p class="text-sm text-gray-300">LOD0 phase with exterior fine detail work to align with RSI ship standards.</p>
+                    </div>
+
+                    <!-- Drake Kraken -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-concept px-2 py-1 text-xs font-semibold rounded">CONCEPT</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Drake Kraken</h3>
+                        <p class="text-sm text-gray-300">Pre-production identifying Ironclad kit reuse opportunities and challenging internal areas.</p>
+                    </div>
+
+                    <!-- Unannounced Vehicle #1 -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-whitebox px-2 py-1 text-xs font-semibold rounded">WHITEBOX</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Unannounced Vehicle Alpha</h3>
+                        <p class="text-sm text-gray-300">Approaching end of whitebox phase with initial development milestones met.</p>
+                    </div>
+
+                    <!-- Unannounced Vehicle #2 -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-greybox px-2 py-1 text-xs font-semibold rounded">GREYBOX</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Unannounced Vehicle Beta</h3>
+                        <p class="text-sm text-gray-300">Passed whitebox review, progressed to greybox with cargo mechanism fixes.</p>
+                    </div>
+
+                    <!-- Unannounced Vehicle #3 -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-greybox px-2 py-1 text-xs font-semibold rounded">GREYBOX</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Unannounced Vehicle Gamma</h3>
+                        <p class="text-sm text-gray-300">Room geometry refinement and moving element animations in development.</p>
+                    </div>
+
+                    <!-- Unannounced Vehicle #4 -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="ship-tag-final px-2 py-1 text-xs font-semibold rounded">FINAL</span>
+                            <span class="team-badge">Art (Ships)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Unannounced Vehicle Delta</h3>
+                        <p class="text-sm text-gray-300">Combined gate review passed, setting new standards for Audio, UI, and VFX integration.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Gameplay Column -->
+            <div class="bg-custom-blue rounded-lg border border-custom-blue">
+                <div class="p-4 border-b border-custom-blue">
+                    <h2 class="text-xl font-bold text-white">Core Gameplay</h2>
+                    <p class="text-sm text-gray-400">11 Features</p>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Freight Elevators -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Freight Elevator Fixes</h3>
+                        <p class="text-sm text-gray-300">Critical Resource Drive event issues resolved with improved debugging tools for faster triage.</p>
+                    </div>
+
+                    <!-- Engineering Gameplay -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Engineering Gameplay Tech Preview</h3>
+                        <p class="text-sm text-gray-300">Thruster temperature visibility, unified iconography, and damage balance modifiers ready for testing.</p>
+                    </div>
+
+                    <!-- Inventory System -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Inventory UI Refresh</h3>
+                        <p class="text-sm text-gray-300">New UI implementation from Star Citizen Live in development with technical preparation complete.</p>
+                    </div>
+
+                    <!-- Loot Generation -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Loot Generation Overhaul</h3>
+                        <p class="text-sm text-gray-300">New system 2x faster than previous version with better designer controls and debug tools.</p>
+                    </div>
+
+                    <!-- Item Expiry -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Item Expiry System</h3>
+                        <p class="text-sm text-gray-300">Time-limited functionality for key cards and similar items with visible inventory timers.</p>
+                    </div>
+
+                    <!-- Quantum Interdiction -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Quantum Interdiction Refactor</h3>
+                        <p class="text-sm text-gray-300">Server Meshing compatibility completed and released in Alpha 4.2.1.</p>
+                    </div>
+
+                    <!-- Control Surfaces -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Fly-by-Wire Control Surfaces</h3>
+                        <p class="text-sm text-gray-300">Modern fighter jet-style IFCS integration with auto-trimming and atmospheric control surface adjustment.</p>
+                    </div>
+
+                    <!-- FPS Radar -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">FPS Radar and Scanning</h3>
+                        <p class="text-sm text-gray-300">Custom scan data, AI scan reactions, and enemy radar detection capabilities.</p>
+                    </div>
+
+                    <!-- Crafting System -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-planning px-2 py-1 text-xs font-semibold rounded">PLANNING</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Crafting System Scope</h3>
+                        <p class="text-sm text-gray-300">Scope reevaluation for first public release with updated requirements and timeline.</p>
+                    </div>
+
+                    <!-- Hacking Improvements -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Hacking Tutorial Options</h3>
+                        <p class="text-sm text-gray-300">Additional teaching options and bug fixes to improve player understanding of hacking mechanics.</p>
+                    </div>
+
+                    <!-- Personal Hangar Spawning -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Core Gameplay</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Personal Hangar Spawning</h3>
+                        <p class="text-sm text-gray-300">Direct spawning into personal hangars with foundation for spawn-where-you-were functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <!-- Art & Animation Column -->
+            <div class="bg-custom-blue rounded-lg border border-custom-blue">
+                <div class="p-4 border-b border-custom-blue">
+                    <h2 class="text-xl font-bold text-white">Art & Animation</h2>
+                    <p class="text-sm text-gray-400">6 Features</p>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Ship Animations -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Animation</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Ship Enter/Exit Templates</h3>
+                        <p class="text-sm text-gray-300">New template animations for ship entry/exit with bespoke gameplay feature pickups.</p>
+                    </div>
+
+                    <!-- Facial Animation -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Animation</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Performance Capture Content</h3>
+                        <p class="text-sm text-gray-300">June capture processing complete with new mission givers, mini boss, and TV broadcast characters.</p>
+                    </div>
+
+                    <!-- Mo-Cap Sessions -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Animation</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Alpha 4.3.1 Mo-Cap</h3>
+                        <p class="text-sm text-gray-300">Additional content captured for Alpha 4.3.1 and future releases with Mo-Cap and Narrative teams.</p>
+                    </div>
+
+                    <!-- Character Armor -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Art (Characters)</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">New Armor Variants</h3>
+                        <p class="text-sm text-gray-300">Character Art creating new armors and variants with Concept Art exploration for flightsuits.</p>
+                    </div>
+
+                    <!-- VFX for Alpha 4.3 -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">VFX</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Alpha 4.3 VFX Package</h3>
+                        <p class="text-sm text-gray-300">Effects for new locations, bespoke events, vehicles, and weapons with Alpha 4.3.1 preparation.</p>
+                    </div>
+
+                    <!-- UI Development -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">UI</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Gameplay Event UI</h3>
+                        <p class="text-sm text-gray-300">Interactive and environmental screens for upcoming event with vehicle dashboard and MFD UI.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community & Events Column -->
+            <div class="bg-custom-blue rounded-lg border border-custom-blue">
+                <div class="p-4 border-b border-custom-blue">
+                    <h2 class="text-xl font-bold text-white">Community & Events</h2>
+                    <p class="text-sm text-gray-400">8 Features</p>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Foundation Festival -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Foundation Festival</h3>
+                        <p class="text-sm text-gray-300">Festival launch with Guide System information and participation rewards showcase.</p>
+                    </div>
+
+                    <!-- Resource Drive -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Resource Drive Event</h3>
+                        <p class="text-sm text-gray-300">Alpha 4.2.1 event with FAQ publication and player engagement monitoring.</p>
+                    </div>
+
+                    <!-- Ship Showdown -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Ship Showdown 2955</h3>
+                        <p class="text-sm text-gray-300">Annual vehicle competition launch with Community Hub and social media integration.</p>
+                    </div>
+
+                    <!-- Referral Program -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Revamped Referral Program</h3>
+                        <p class="text-sm text-gray-300">Improved user experience with refreshed rewards that unlock more frequently.</p>
+                    </div>
+
+                    <!-- Bar Citizen Tour -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Bar Citizen World Tour</h3>
+                        <p class="text-sm text-gray-300">Quantum Vegas and Tempa Bar Citizen events bringing together community members.</p>
+                    </div>
+
+                    <!-- Screenshot Contest -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Kindness & Camaraderie Contest</h3>
+                        <p class="text-sm text-gray-300">Screenshot contest celebrating teamwork and friendship moments in the verse.</p>
+                    </div>
+
+                    <!-- Alien Cookbook -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Alien-Themed Digital Cookbook</h3>
+                        <p class="text-sm text-gray-300">Player-submitted recipes from Wikelo's Nine Tastes contest compiled into digital cookbook.</p>
+                    </div>
+
+                    <!-- New Player Resources -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Community</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">New Player Essentials</h3>
+                        <p class="text-sm text-gray-300">Resource collection and Org Spotlight featuring recruiting organizations for newcomers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology & Infrastructure Column -->
+            <div class="bg-custom-blue rounded-lg border border-custom-blue">
+                <div class="p-4 border-b border-custom-blue">
+                    <h2 class="text-xl font-bold text-white">Technology & Infrastructure</h2>
+                    <p class="text-sm text-gray-400">7 Features</p>
+                </div>
+                <div class="p-4 space-y-4">
+                    <!-- Mission Generation -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Mission Design</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Mission Generation Fixes</h3>
+                        <p class="text-sm text-gray-300">Resource Drive exploit fixes and mission-generation system support with Engineering team.</p>
+                    </div>
+
+                    <!-- Live Tools -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Online Technology</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Developer Bug Reporting</h3>
+                        <p class="text-sm text-gray-300">Improved crash handler reliability with wider use case support for faster issue resolution.</p>
+                    </div>
+
+                    <!-- Performance Optimization -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">R&D</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Engine Performance Analysis</h3>
+                        <p class="text-sm text-gray-300">Exclusive focus on performance analysis and optimization of engine and game code for foreseeable future.</p>
+                    </div>
+
+                    <!-- Blueprint Library -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-planning px-2 py-1 text-xs font-semibold rounded">PLANNING</span>
+                            <span class="team-badge">Online Technology</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Blueprint Library API</h3>
+                        <p class="text-sm text-gray-300">API development planning for August with initial task definition and architecture design.</p>
+                    </div>
+
+                    <!-- Mission Location System -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Mission Design</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Legacy Location Missions</h3>
+                        <p class="text-sm text-gray-300">Combat missions now target old locations not included in Alpha 4.0 refactor.</p>
+                    </div>
+
+                    <!-- Economy Balancing -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-in-progress px-2 py-1 text-xs font-semibold rounded">IN PROGRESS</span>
+                            <span class="team-badge">Economy</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Ammunition Accessibility</h3>
+                        <p class="text-sm text-gray-300">FPS weapon ammo added to significant number of shops while keeping special weapon ammo exclusive.</p>
+                    </div>
+
+                    <!-- Narrative Content -->
+                    <div class="feature-card p-4 rounded-lg">
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="tag-completed px-2 py-1 text-xs font-semibold rounded">COMPLETED</span>
+                            <span class="team-badge">Narrative</span>
+                        </div>
+                        <h3 class="font-semibold text-white mb-2">Alpha 4.3 Narrative Content</h3>
+                        <p class="text-sm text-gray-300">Mission text, objectives, UI screens, and branding refinement for cohesive narrative experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
